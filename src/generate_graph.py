@@ -9,11 +9,10 @@ from timeit import default_timer as timer
 limit=None
 project = 'enwiki'
 dump_date = "20220420"
-dataset_home = '/home/cse/phd/anz198717/scratch/suchith_data/wikipedia/wikipedia-data-science'
-
+dataset_home = '/home/scai/phd/aiz218323/scratch/XML/wikipedia-data-science_2'
 
 prog = re.compile(f'({project}-{dump_date})-'+r'pages-articles-multistream([0-9]{1,2}).xml-(p[0-9]+p[0-9]+).bz2')
-partitions = sorted([f'{dataset_home}/datasets/{file}' for file in os.listdir(f'{dataset_home}/datasets') 
+partitions = sorted([f'{dataset_home}/datasets/{file}' for file in os.listdir(f'{dataset_home}/datasets')
                      if prog.match(file)])
 print(f'** Total number of partitions of the wikipedia dump : {len(partitions)}')
 
