@@ -18,8 +18,8 @@ dataset_home = '/home/scai/phd/aiz218323/scratch/XML/wikipedia-data-science_2'
 * To download the abstract dumps
 `python download.py --abstract`
 
-For creating datasets from the dumps, we will need to process the wikitext present in the XML dumps for which we will be using the `mwparserfromhell_2` , which I have modified to extract parts of each section separately. So add the path to the this folder provided in the repository to `$PYTHONPATH` as follows :<br>
-PYTHONPATH='/path/to/GraphWikipedia/mwparserfromhell_2/src/:$PYTHONPATH'
+For creating datasets from the dumps, we will need to process the wikitext present in the XML dumps for which we will be using the `mwparserfromhell_2` library, which I have modified to accomodate few of our requirements. So add the path to this folder provided in the repository to `$PYTHONPATH` as follows :<br>
+`PYTHONPATH='/path/to/GraphWikipedia/mwparserfromhell_2/src/:$PYTHONPATH`
 
 ## GraphWikiSeeAlso
 This is article-to-article recommendation datasets, the classification task is given an article we need to predict the articles present in its `Seealso` section. Click [here](https://drive.google.com/file/d/1QcL_jqSkR393krMBpjpOQP1hD0DMAUSM/view?usp=sharing) to download the dataset.
