@@ -15,7 +15,7 @@ Adding paths to the configuration files and amazon graph packages.
 config_path = os.path.join(os.getcwd(), 'config')
 sys.path.append(config_path)
 
-from wikipedia_config import *
+from download_config import *
 
 
 if __name__ == '__main__':
