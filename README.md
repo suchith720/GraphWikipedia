@@ -20,7 +20,7 @@ dataset_home = '/home/scai/phd/aiz218323/scratch/XML/wikipedia-data-science_2'
 
 
 ## GraphWikiSeeAlso
-This is article-to-article recommendation datasets, the classification task is given an article we need to predict the articles present in its `Seealso` section.
+This is article-to-article recommendation datasets, the classification task is given an article we need to predict the articles present in its `Seealso` section. Click [here](https://drive.google.com/file/d/1QcL_jqSkR393krMBpjpOQP1hD0DMAUSM/view?usp=sharing) to download the dataset.
 
 To create the dataset do the following:
 1. Provide the following variables in the configurate file present at `config/seealso_config.py`
@@ -74,7 +74,7 @@ Here are some of the Extreme classification baselines:
 
 Algorithm | P1 | P3 | P5 | N1 | N3 | N5 | PSP1 | PSP3 | PSP5 | PSN1 | PSN3 | PSN5 | MODELSIZE | TRNTIME | PREDTIME
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-ParabelOld | 23.18 | 13.53 | 9.66 | 23.18 | 23.63 | 24.48 | 12.51 | 14.51 | 15.91 | 12.51 | 14.27 | 15.24 | 0.64 | 0.08 | 1.31
+Parabel | 23.18 | 13.53 | 9.66 | 23.18 | 23.63 | 24.48 | 12.51 | 14.51 | 15.91 | 12.51 | 14.27 | 15.24 | 0.64 | 0.08 | 1.31
 Bonsai | 24.14 | 14.28 | 10.27 | 24.14 | 24.75 | 25.72 | 13.65 | 16.15 | 17.84 | 13.65 | 15.79 | 16.94 | 385.57 | 1466.05 | 22.47
 PfastreXML | 19.45 | 12.05 | 8.79 | 19.45 | 20.73 | 21.76 | 13.86 | 15.41 | 16.66 | 13.86 | 15.33 | 16.25 | 7.11 | 0.96 | 6.67
 AnneXML | 0.03 | 0.02 | 0.02 | 0.03 | 0.04 | 0.04 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 0.01 | 4449.60 | 1262.65 | 0.30
@@ -82,7 +82,7 @@ XT | 22.14 | 13.19 | 9.55 | 22.14 | 22.88 | 23.89 | 12.01 | 14.28 | 15.95 | 12.0
 
 
 ## GraphWikiCategory
-The classification task here is to tag a wikipedia article with the categories it belongs to. Wikipedia have special pages called category pages, when a wikilink to these pages is present in an article, the article is considered to belong to that particular category.
+The classification task here is to tag a wikipedia article with the categories it belongs to. Wikipedia have special pages called category pages, when a wikilink to these pages is present in an article, the article is considered to belong to that particular category. Click [here](https://drive.google.com/file/d/1f1bTz3Gk9ikmCOEIPdVD7-qekPoC6Vkh/view?usp=sharing) to download the dataset.
 
 Here are the steps to create this dataset :
 1. Provide the following variables in the configurate file present at `config/category_config.py` 
@@ -143,3 +143,8 @@ Number of edges | 4,097,826
 Average in-degree | 5.5262
 Average out-degree | 2.5174
 
+### Baselines
+
+Algorithm | P1 | P3 | P5 | N1 | N3 | N5 | PSP1 | PSP3 | PSP5 | PSN1 | PSN3 | PSN5 | MODELSIZE | TRNTIME | PREDTIME
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Parabel | 23.09 | 13.50 | 9.64 | 23.09 | 23.57 | 24.42 | 12.45 | 14.47 | 15.85 | 12.45 | 14.22 | 15.18 | 0.64 | 0.09 | 1.41
