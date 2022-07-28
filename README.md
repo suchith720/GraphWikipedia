@@ -53,6 +53,7 @@ xc_dir = f'{category_dir}/XCData'
 2. Run the following commands:
 ```
 $ python src/generate_seealso_graph.py
+$ python src/process_abstract_dumps.py
 $ python src/create_graph-wiki-seealso.py
 ```
 
@@ -115,6 +116,7 @@ xc_dir = f'{category_dir}/XCData'
 2. Run the following commands:
 ```
 $ python src/generate_category_graph.py
+$ python src/process_abstract_dumps.py
 $ python src/create_graph-wiki-category.py
 ```
 
